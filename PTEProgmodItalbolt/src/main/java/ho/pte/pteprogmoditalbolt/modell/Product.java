@@ -63,11 +63,11 @@ public class Product {
         this.imageSrc = imgSrc;
     }
 
-    public ProductType getType() {
+    public String getType() {
         return Type;
     }
 
-    public void setType(ProductType type) {
+    public void setType(String type) {
         Type = type;
     }
 

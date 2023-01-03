@@ -17,9 +17,7 @@ public class Product {
     private String Description;
     private Integer Price;
     private String imageSrc;
-
-    @Enumerated(EnumType.STRING)
-    private ProductType Type;
+    private String Type;
     private Boolean Hero = false;
     private Integer Size;
     private Integer alcoholPercent;

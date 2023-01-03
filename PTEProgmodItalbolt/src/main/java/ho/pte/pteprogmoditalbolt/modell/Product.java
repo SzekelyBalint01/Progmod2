@@ -20,7 +20,7 @@ public class Product {
 
     @Enumerated(EnumType.STRING)
     private ProductType Type;
-    private Boolean Hero;
+    private Boolean Hero = false;
     private Integer Size;
     private Integer alcoholPercent;
     private String placeOfOrigin;

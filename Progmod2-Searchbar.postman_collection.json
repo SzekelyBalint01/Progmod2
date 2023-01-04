@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "0deb3ad2-b1fc-4c31-9134-4a0e3c87c0b6",
+		"name": "Progmod2/Searchbar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24447538"
+	},
+	"item": [
+		{
+			"name": "SearchBar",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/searchBar?keyword=jager",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"searchBar"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "jager"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

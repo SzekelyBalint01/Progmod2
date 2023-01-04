@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "f8517326-cd8d-47b0-9bd2-cde0aea105fe",
+		"name": "Progmod2/Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24447538"
+	},
+	"item": [
+		{
+			"name": "List all Product",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/products",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Product",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"imageSrc\": \"img\\\\card8.png\",\r\n        \"alcoholPercent\": 375,\r\n        \"placeOfOrigin\": \"Germany\",\r\n        \"name\": \"jager meister scharf\",\r\n        \"type\": \"keserű\",\r\n        \"size\": 5,\r\n        \"description\": \"Nagyon finom nagyon jo\",\r\n        \"price\": 3000,\r\n        \"hero\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/products",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product By ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/products/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product By ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"imageSrc\": \"img\\\\card8.png\",\r\n        \"alcoholPercent\": 375,\r\n        \"placeOfOrigin\": \"Germany\",\r\n        \"name\": \"jager meister scharf\",\r\n        \"type\": \"keserű + gyömbér\",\r\n        \"size\": 5,\r\n        \"description\": \"Nagyon finom nagyon jo\",\r\n        \"price\": 3000,\r\n        \"hero\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/products/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

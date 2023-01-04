@@ -8,8 +8,7 @@ CREATE TABLE users
     email       VARCHAR(255),
     zip         VARCHAR(10),
     city        VARCHAR(50),
-    street      VARCHAR(250),
-    cart        VARCHAR(1000)
+    street      VARCHAR(250)
 );
 CREATE TABLE products
 (

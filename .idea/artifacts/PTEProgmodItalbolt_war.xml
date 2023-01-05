@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="PTEProgmodItalbolt:war">
+    <output-path>$PROJECT_DIR$/PTEProgmodItalbolt/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>PTEProgmodItalbolt</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="PTEProgmodItalbolt-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="PTEProgmodItalbolt:war exploded" />
+    </root>
+  </artifact>
+</component>
